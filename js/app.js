@@ -1711,7 +1711,7 @@
             }
             setLogging(message) {}
         }
-        flsModules.select = new SelectConstructor({});
+        flsModules.select = new SelectConstructor({}, "select:not([data-money])");
         var datepicker_min = __webpack_require__(448);
         const currentDate = new Date;
         const tomorrowDate = new Date(currentDate);
@@ -8605,6 +8605,21 @@ PERFORMANCE OF THIS SOFTWARE.
             });
         }
         window.initMap = initMap;
+        function changeLang() {
+            const langLinks = document.querySelectorAll("[data-language]");
+            for (const link of langLinks) link.addEventListener("click", (() => {
+                if (link.getAttribute("data-language") === "ru") {
+                    link.setAttribute("data-language", "en");
+                    link.setAttribute("href", "/en/");
+                    link.textContent = "En";
+                } else {
+                    link.setAttribute("data-language", "ru");
+                    link.setAttribute("href", "/ru/");
+                    link.textContent = "Ru";
+                }
+            }));
+        }
+        changeLang();
         window["FLS"] = false;
         isWebp();
         menuInit();

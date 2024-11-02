@@ -5861,6 +5861,75 @@ body::after {
   font-size: 0.875rem;
 }
 
+.main-home {
+  height: 600px;
+  background-color: #0A3647;
+}
+
+.lang-select a {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: #fff;
+  font-weight: 500;
+  -webkit-transition: color 0.3s ease 0s, background-color 0.3s ease 0s, border-bottom 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+  transition: color 0.3s ease 0s, background-color 0.3s ease 0s, border-bottom 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+  transition: color 0.3s ease 0s, background-color 0.3s ease 0s, box-shadow 0.3s ease 0s, border-bottom 0.3s ease 0s;
+  transition: color 0.3s ease 0s, background-color 0.3s ease 0s, box-shadow 0.3s ease 0s, border-bottom 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+  border-radius: 0.125rem;
+  background-color: transparent;
+  border-bottom: 0.125rem solid transparent;
+}
+
+.lang-select a:focus {
+  background-color: #109EEE;
+  color: #fff;
+}
+
+._header-show .lang-select a {
+  color: #0a3647;
+}
+
+._header-show .lang-select a:focus {
+  color: #fff;
+}
+
+.money-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.money-select select::-ms-expand {
+  display: none;
+}
+
+.money-select select {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: #fff;
+  font-weight: 500;
+  -webkit-transition: color 0.3s ease 0s, background-color 0.3s ease 0s, border-bottom 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+  transition: color 0.3s ease 0s, background-color 0.3s ease 0s, border-bottom 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+  transition: color 0.3s ease 0s, background-color 0.3s ease 0s, box-shadow 0.3s ease 0s, border-bottom 0.3s ease 0s;
+  transition: color 0.3s ease 0s, background-color 0.3s ease 0s, box-shadow 0.3s ease 0s, border-bottom 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+  border-radius: 0.125rem;
+  background-color: transparent;
+  border-bottom: 0.125rem solid transparent;
+}
+
+.money-select select:focus {
+  background-color: #109EEE;
+  color: #fff;
+}
+
+._header-show .money-select select {
+  color: #0a3647;
+}
+
+._header-show .money-select select:focus {
+  color: #fff;
+}
+
 .page__main {
   position: relative;
   z-index: 2;
@@ -14302,17 +14371,17 @@ body::after {
 .simplebar-scrollbar:before {
   position: absolute;
   content: "";
-  background: #109EEE;
+  background: black;
   border-radius: 7px;
   left: 2px;
   right: 2px;
-  opacity: 1;
+  opacity: 0;
   -webkit-transition: opacity 0.2s 0.5s linear;
   transition: opacity 0.2s 0.5s linear;
 }
 
 .simplebar-scrollbar.simplebar-visible:before {
-  opacity: 1;
+  opacity: 0.5;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
   -webkit-transition-duration: 0s;
@@ -15773,6 +15842,38 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .nav__icon {
     padding-left: 1.25rem;
+  }
+
+  .lang-select a {
+    padding-top: 1.5rem;
+  }
+
+  .lang-select a {
+    padding-bottom: 1.25rem;
+  }
+
+  .lang-select a {
+    padding-right: 1.28125rem;
+  }
+
+  .lang-select a {
+    padding-left: 1.28125rem;
+  }
+
+  .money-select select {
+    padding-top: 1.4375rem;
+  }
+
+  .money-select select {
+    padding-bottom: 1.1875rem;
+  }
+
+  .money-select select {
+    padding-right: 0.9375rem;
+  }
+
+  .money-select select {
+    padding-left: 0.9375rem;
   }
 
   .page__hottest {
@@ -21240,6 +21341,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding-left: 0.3125rem;
   }
 
+  .lang-select a {
+    padding-top: 0.5625rem;
+    padding-bottom: 0.3125rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .money-select select {
+    padding-top: 0.5rem;
+    padding-bottom: 0.375rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
   .successfully__list li {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 50%;
@@ -22448,6 +22563,38 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .quick-footer__title:not(:last-child) {
     margin-bottom: 1rem;
+  }
+
+  .lang-select a {
+    padding-top: 0.8125rem;
+  }
+
+  .lang-select a {
+    padding-bottom: 0.6875rem;
+  }
+
+  .lang-select a {
+    padding-right: 0.8125rem;
+  }
+
+  .lang-select a {
+    padding-left: 0.8125rem;
+  }
+
+  .money-select select {
+    padding-top: 0.75rem;
+  }
+
+  .money-select select {
+    padding-bottom: 0.625rem;
+  }
+
+  .money-select select {
+    padding-right: 0.8125rem;
+  }
+
+  .money-select select {
+    padding-left: 0.8125rem;
   }
 
   .page__hottest {
@@ -25667,6 +25814,102 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (padding-left: clamp( 0.625rem , -0.2141096465rem  +  1.7481906227vw , 1.25rem )) {
     .nav__icon {
       padding-left: calc(0.625rem + 0.625 * (100vw - 47.99875rem) / 35.75125);
+    }
+}
+
+@supports (padding-top: clamp( 0.8125rem , -0.1105206112rem  +  1.923009685vw , 1.5rem )) {
+    .lang-select a {
+      padding-top: clamp( 0.8125rem , -0.1105206112rem  +  1.923009685vw , 1.5rem );
+    }
+}
+
+@supports not (padding-top: clamp( 0.8125rem , -0.1105206112rem  +  1.923009685vw , 1.5rem )) {
+    .lang-select a {
+      padding-top: calc(0.8125rem + 0.6875 * (100vw - 47.99875rem) / 35.75125);
+    }
+}
+
+@supports (padding-bottom: clamp( 0.6875rem , -0.0676986819rem  +  1.5733715604vw , 1.25rem )) {
+    .lang-select a {
+      padding-bottom: clamp( 0.6875rem , -0.0676986819rem  +  1.5733715604vw , 1.25rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 0.6875rem , -0.0676986819rem  +  1.5733715604vw , 1.25rem )) {
+    .lang-select a {
+      padding-bottom: calc(0.6875rem + 0.5625 * (100vw - 47.99875rem) / 35.75125);
+    }
+}
+
+@supports (padding-right: clamp( 0.8125rem , 0.1831677651rem  +  1.311142967vw , 1.28125rem )) {
+    .lang-select a {
+      padding-right: clamp( 0.8125rem , 0.1831677651rem  +  1.311142967vw , 1.28125rem );
+    }
+}
+
+@supports not (padding-right: clamp( 0.8125rem , 0.1831677651rem  +  1.311142967vw , 1.28125rem )) {
+    .lang-select a {
+      padding-right: calc(0.8125rem + 0.46875 * (100vw - 47.99875rem) / 35.75125);
+    }
+}
+
+@supports (padding-left: clamp( 0.8125rem , 0.1831677651rem  +  1.311142967vw , 1.28125rem )) {
+    .lang-select a {
+      padding-left: clamp( 0.8125rem , 0.1831677651rem  +  1.311142967vw , 1.28125rem );
+    }
+}
+
+@supports not (padding-left: clamp( 0.8125rem , 0.1831677651rem  +  1.311142967vw , 1.28125rem )) {
+    .lang-select a {
+      padding-left: calc(0.8125rem + 0.46875 * (100vw - 47.99875rem) / 35.75125);
+    }
+}
+
+@supports (padding-top: clamp( 0.75rem , -0.1730206112rem  +  1.923009685vw , 1.4375rem )) {
+    .money-select select {
+      padding-top: clamp( 0.75rem , -0.1730206112rem  +  1.923009685vw , 1.4375rem );
+    }
+}
+
+@supports not (padding-top: clamp( 0.75rem , -0.1730206112rem  +  1.923009685vw , 1.4375rem )) {
+    .money-select select {
+      padding-top: calc(0.75rem + 0.6875 * (100vw - 47.99875rem) / 35.75125);
+    }
+}
+
+@supports (padding-bottom: clamp( 0.625rem , -0.1301986819rem  +  1.5733715604vw , 1.1875rem )) {
+    .money-select select {
+      padding-bottom: clamp( 0.625rem , -0.1301986819rem  +  1.5733715604vw , 1.1875rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 0.625rem , -0.1301986819rem  +  1.5733715604vw , 1.1875rem )) {
+    .money-select select {
+      padding-bottom: calc(0.625rem + 0.5625 * (100vw - 47.99875rem) / 35.75125);
+    }
+}
+
+@supports (padding-right: clamp( 0.8125rem , 0.6446780707rem  +  0.3496381245vw , 0.9375rem )) {
+    .money-select select {
+      padding-right: clamp( 0.8125rem , 0.6446780707rem  +  0.3496381245vw , 0.9375rem );
+    }
+}
+
+@supports not (padding-right: clamp( 0.8125rem , 0.6446780707rem  +  0.3496381245vw , 0.9375rem )) {
+    .money-select select {
+      padding-right: calc(0.8125rem + 0.125 * (100vw - 47.99875rem) / 35.75125);
+    }
+}
+
+@supports (padding-left: clamp( 0.8125rem , 0.6446780707rem  +  0.3496381245vw , 0.9375rem )) {
+    .money-select select {
+      padding-left: clamp( 0.8125rem , 0.6446780707rem  +  0.3496381245vw , 0.9375rem );
+    }
+}
+
+@supports not (padding-left: clamp( 0.8125rem , 0.6446780707rem  +  0.3496381245vw , 0.9375rem )) {
+    .money-select select {
+      padding-left: calc(0.8125rem + 0.125 * (100vw - 47.99875rem) / 35.75125);
     }
 }
 
@@ -30792,6 +31035,30 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .info-footer__link:hover {
     text-decoration: underline;
+  }
+
+  .lang-select a:hover {
+    -webkit-box-shadow: 0rem 0.0625rem 0.8125rem 0rem rgba(13, 85, 110, 0.2);
+            box-shadow: 0rem 0.0625rem 0.8125rem 0rem rgba(13, 85, 110, 0.2);
+    border-bottom: 0.125rem solid #109EEE;
+    background-color: #fff;
+    color: #0A3647;
+  }
+
+  ._header-show .lang-select a:hover {
+    color: #0a3647;
+  }
+
+  .money-select select:hover {
+    -webkit-box-shadow: 0rem 0.0625rem 0.8125rem 0rem rgba(13, 85, 110, 0.2);
+            box-shadow: 0rem 0.0625rem 0.8125rem 0rem rgba(13, 85, 110, 0.2);
+    border-bottom: 0.125rem solid #109EEE;
+    background-color: #fff;
+    color: #0A3647;
+  }
+
+  ._header-show .money-select select:hover {
+    color: #0a3647;
   }
 
   .trending__card:hover {
